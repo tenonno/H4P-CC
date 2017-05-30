@@ -10,8 +10,9 @@ let connectedLabel = document.getElementById('ConnectedLabel');
 let pxtButton = document.getElementById('PXTButton');
 let scratchButton = document.getElementById('ScratchButton');
 let tynkerButton = document.getElementById('TynkerButton');
-let customButtons = [document.getElementById('CustomButtonA'), document.getElementById('CustomButtonB'), document.getElementById('CustomButtonC')];
-let fixedButtons = [pxtButton, scratchButton, tynkerButton];
+let feelesButton = document.getElementById('FeelesButton');
+let customButtons = [document.getElementById('CustomButtonA'), document.getElementById('CustomButtonB')];
+let fixedButtons = [pxtButton, scratchButton, tynkerButton, feelesButton];
 let editButton = document.getElementById('EditLinksButton');
 const ipcRenderer = electron.ipcRenderer;
 let inEditMode = false;
@@ -100,4 +101,5 @@ function openWindowButton(url, button, type, splitView = false) {
 openWindowButton(fixedEditors.Pxt, pxtButton, messages_1.EditorType.SameWindow);
 openWindowButton(fixedEditors.Scratch, scratchButton, messages_1.EditorType.External);
 openWindowButton(fixedEditors.Tynker, tynkerButton, messages_1.EditorType.SameWindow);
+openWindowButton(fixedEditors.Feeles, feelesButton, messages_1.EditorType.SameWindow);
 //# sourceMappingURL=connectedView.js.map

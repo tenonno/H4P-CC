@@ -21,7 +21,7 @@ const splitViewMinWidth = 1024;
 const launchURI = 'codeconnection';
 const minecraftURI = 'minecraftedu://?wsserver=ws://localhost:';
 // Command-line option to open dev tools for browser windows and hosted webviews
-const openDevTools = process.argv.indexOf('--devtools') > -1;
+const openDevTools = true; //process.argv.indexOf('--devtools') > -1;
 let win;
 let onViewLoad = null;
 let restServer = restServer_1.RestServer;

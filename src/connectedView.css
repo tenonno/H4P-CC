@@ -30,17 +30,18 @@
   visibility: visible;
 }
 
-#CustomButtonA {
+#FeelesButton {
   top: 300px;
   left: 70px;
+  visibility: visible;
 }
 
-#CustomButtonB {
+#CustomButtonA {
   top: 300px;
   left: 335px;
 }
 
-#CustomButtonC {
+#CustomButtonB {
   top: 300px;
   left: 595px;
 }

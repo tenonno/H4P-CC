@@ -108,7 +108,7 @@ class ConnectedViewController {
     loadEditorButtons() {
         // Fill placeholder buttons in case we don't load successfully
         this.editorButtons = [];
-        for (let i = 0; i < 3; ++i) {
+        for (let i = 0; i < 4; ++i) {
             this.editorButtons.push(this.createPlaceholderEditor(false));
         }
         this.editorButtons[0].active = true;
