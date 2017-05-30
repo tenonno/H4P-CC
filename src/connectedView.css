@@ -1,0 +1,98 @@
+#ConnectedLabel {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 160px;
+}
+
+#EditorLabel {
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+
+#PXTButton {
+  top: 200px;
+  left: 70px;
+  visibility: visible;
+}
+
+#ScratchButton {
+  top: 200px;
+  left: 335px;
+  visibility: visible;
+}
+
+#TynkerButton {
+  top: 200px;
+  left: 595px;
+  visibility: visible;
+}
+
+#CustomButtonA {
+  top: 300px;
+  left: 70px;
+}
+
+#CustomButtonB {
+  top: 300px;
+  left: 335px;
+}
+
+#CustomButtonC {
+  top: 300px;
+  left: 595px;
+}
+
+#EditLinksButton {
+  background: url(../resources/edit.png);
+  width: 62px;
+  height: 54px;
+  position: absolute;
+  -webkit-app-region: no-drag;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: 30px;
+  top: 20px;
+  outline: none;
+}
+
+#EditLinksButton.hover, #EditLinksButton.focus {
+    background-image: url(../resources/editHover.png);
+}
+
+#EditLinksButton.active {
+    background-image: url(../resources/editPress.png);
+}
+
+.customButton {
+  color: black;
+  position: absolute;
+  font-family: 'mojangles', Fallback, Impact;
+  font-size: 100%;
+  font-size: 22pt;
+  text-align: center;
+  visibility: visible;
+  background: url(../resources/button.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 234px;
+  height: 82px;
+  -webkit-app-region: no-drag;
+  background-blend-mode: multiply;
+  background-color: white;
+  outline: none;
+}
+
+.customButton.hover, .focus {
+  background-image: url(../resources/buttonHover.png);
+}
+
+.customButton.active {
+  background-image: url(../resources/buttonPress.png);
+}
+
+#TitleText {
+  text-align: center;
+}

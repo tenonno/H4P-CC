@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hostedEditor.css">
+</head>
+
+<body>
+    <div>
+        <div id="Header" class="hidden">
+            <div id="HeaderLeft"></div>
+            <div id="HeaderMiddle"></div>
+            <div id="HeaderRight"></div>
+        </div>
+        <p id="TitleText">
+            <!-- Script is going to update title text -->
+        </p>
+        <button type="button" id="BackButton"></button>
+        <button type="button" id="MinimizeButton"></button>
+        <button type="button" id="MaximizeButton" class="hidden"></button>
+        <button type="button" id="ExitButton"></button>
+        <p id="LoadingLabel">
+            <!-- Script is going to update loading text -->
+        </p>
+
+        <webview id="Editor" class="hide" src="https://www.tynker.com/minecraft/learn-to-code" preload="./ipcRendererInjector.js"></webview>
+    </div>
+
+    <script>
+        require('./tynker.js')
+    </script>
+</body>
+
+</html>

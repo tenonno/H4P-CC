@@ -1,0 +1,167 @@
+@font-face {
+  font-family: mojangles;
+  src: url(../Fonts/mojangles.ttf);
+}
+
+html {
+  height: 100%;
+  -webkit-app-region: drag;
+}
+
+body {
+  font-family: mojangles, Fallback, Impact;
+  text-shadow: none;
+  font-size: 24pt;
+  background-image: url(../resources/background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+  -webkit-app-region: drag;
+}
+
+#ExitButton {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    padding: 0px;
+    width: 64px;
+    height: 64px;
+    background-image: url(../resources/x.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    image-rendering: pixelated;
+    outline: none;
+}
+
+#ExitButton.hover, #ExitButton.focus {
+  background-image: url(../resources/xHover.png);
+}
+
+#ExitButton.active {
+  background-image: url(../resources/xPress.png);
+}
+
+#MinimizeButton {
+    position: absolute;
+    right: 76px;
+    top: 12px;
+    padding: 0px;
+    width: 64px;
+    height: 64px;
+    background: url(../resources/minimize.png);
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    outline: none;
+}
+
+#MinimizeButton.hover, #MinimizeButton.focus {
+  background-image: url(../resources/minimizeHover.png);
+}
+
+#MinimizeButton.active {
+  background-image: url(../resources/minimizePress.png);
+}
+
+#TitleText {
+  margin: auto;
+  width: auto;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 21px;
+  font-size: 24pt;
+  color: #413e3e;
+}
+
+input[type=text] {
+  font-family: 'mojangles', Fallback, Impact;
+  font-size: 100%;
+  font-size: 24pt;
+  color: white;
+  text-align: center;
+  width: 671px;
+  height: 97px;
+  background: url(../resources/textbox.png);
+  -webkit-app-region: no-drag;
+  border: none;
+  padding: 0px 0px 0px 0px;
+}
+
+button {
+  -webkit-app-region: no-drag;
+  border: none;
+  padding: 0px 0px 0px 0px;
+  outline: none;
+}
+
+#CopyButton {
+  background: url(../resources/copy.png);
+  width: 97px;
+  height: 97px;
+  position: absolute;
+  -webkit-app-region: no-drag;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#CopyButton.hover, #CopyButton.focus {
+  background: url(../resources/copyHover.png);
+}
+
+#CopyButton.active {
+  background: url(../resources/copyPress.png);
+}
+
+.textButton {
+  color: black;
+  position: absolute;
+  font-family: 'mojangles', Fallback, Impact;
+  font-size: 100%;
+  font-size: 22pt;
+  text-align: center;
+  visibility: visible;
+  background: url(../resources/button.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 234px;
+  height: 82px;
+  -webkit-app-region: no-drag;
+  background-blend-mode: multiply;
+  background-color: white;
+  outline: none;
+}
+
+.textButton.hover, .focus {
+  background-image:  url(../resources/buttonHover.png);
+}
+
+.textButton.active {
+  background-image:  url(../resources/buttonPress.png);
+}
+
+.textButton:disabled {
+  background: url(../resources/button.png);
+  color: grey;
+}
+
+#BackButton {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 64px;
+  height: 64px;
+  background: url(../resources/back.png);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  outline: none;
+}
+
+#BackButton.hover, #BackButton.focus {
+  background-image: url(../resources/backHover.png);
+}
+
+#BackButton.active {
+  background-image : url(../resources/backPress.png);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="editView.css">
+  </head>
+  <body>
+    <p id="TitleText">
+    <!-- Script is going to update title text -->
+    </p>
+    <button type="button" id="ExitButton"></button>
+    <button type="button" id="MinimizeButton"></button>
+    <button type="button" id="BackButton"></button>
+    <p class="editLabel" id="NameLabel">Button Name</p>
+    <p class="editLabel" id="LinkLabel">Link to Service</p>
+    <p class="editLabel" id="ColorLabel">Button Color</p>
+    <input class="editInput" id="NameInput" value=""/>
+    <input class="editInput" id="LinkInput" value=""/>
+    <img src="../resources/textboxFullWidth.png" id="ColorBackdrop"/>
+    <form>
+      <div class=colorRadioWrapper>
+        <input type="radio" id="0" name="color"/>
+        <label class="colorRadio" for="0"></label>
+        <input type="radio" id="1" name="color"/>
+        <label class="colorRadio" for="1"></label>
+        <input type="radio" id="2" name="color"/>
+        <label class="colorRadio" for="2"></label>
+        <input type="radio" id="3" name="color"/>
+        <label class="colorRadio" for="3"></label>
+        <input type="radio" id="4" name="color"/>
+        <label class="colorRadio" for="4"></label>
+        <input type="radio" id="5" name="color"/>
+        <label class="colorRadio" for="5"></label>
+        <input type="radio" id="6" name="color"/>
+        <label class="colorRadio" for="6"></label>
+        <input type="radio" id="7" name="color"/>
+        <label class="colorRadio" for="7"></label>
+        <input type="radio" id="8" name="color"/>
+        <label class="colorRadio" for="8"></label>
+        <input type="radio" id="9" name="color"/>
+        <label class="colorRadio" for="9"></label>
+      </div>
+    </form>
+    <button class="textButton" id="Delete">Delete</button>
+    <button class="textButton" id="Save">Save</button>
+    <script>
+      require('./editView')
+      let applicationName = require('./base/sharedConstants.js').ApplicationName;
+      document.title = applicationName;
+      document.getElementById("TitleText").innerHTML = 'Add Quick Link Button';
+    </script>
+  </body>
+
+</html>

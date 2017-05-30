@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="connectedView.css">
+  </head>
+  <body>
+    <p id="TitleText">
+    <!-- Script is going to update title text -->
+    </p>
+    <button autofocus>
+    <button type="button" id="EditLinksButton"></button>
+    <button type="button" id="MinimizeButton"></button>
+    <button type="button" id="ExitButton"></button>
+    <div align="center">
+    <p id="ConnectedLabel"> 
+      You are connected to: 
+    </p>
+    <p id="EditorLabel">
+      Choose your Editor:<br>
+    </p>
+    <button class="textButton" id="PXTButton">MakeCode</button>
+    <button class="textButton" id="ScratchButton">Scratch</button>
+    <button class="textButton" id="TynkerButton">Tynker</button>
+    <button class="customButton" id="CustomButtonA"></button>
+    <button class="customButton" id="CustomButtonB"></button>
+    <button class="customButton" id="CustomButtonC"></button>
+    <script>
+      require('./connectedView.js')
+      let applicationName = require('./base/sharedConstants.js').ApplicationName;
+      document.title = applicationName;
+      document.getElementById("TitleText").innerHTML = applicationName;
+    </script>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,106 @@
+.editLabel {
+    color: white;
+    position: absolute;
+    left: 50px;
+}
+
+.editInput {
+    font-family: 'mojangles', Fallback, Impact;
+    font-size: 100%;
+    font-size: 24pt;
+    color: white;
+    text-align: center;
+    -webkit-app-region: no-drag;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    left: 50px;
+    background-size: 100%;
+    background-image: url(../resources/textboxFullWidth.png);
+    width: 800px;
+    height: 70px;
+    outline: none white 2px;
+}
+
+.editInput:focus {
+    outline-style: solid;
+}
+
+#Delete {
+    bottom: 40px;
+    left: 100px;
+}
+
+#Save {
+    bottom: 40px;
+    right: 100px;
+}
+
+#NameLabel {
+    top: 45px;
+}
+
+#NameInput {
+    top: 115px;
+}
+
+#LinkLabel {
+    top: 150px;
+}
+
+#LinkInput {
+    top: 220px;
+}
+
+#ColorLabel {
+    top: 255px;
+}
+
+#ColorInput {
+    top: 320px;
+}
+
+.colorRadio {
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 79px;
+    height: 60px;
+    background-image: url(../resources/colorRadio.png);
+    background-blend-mode: multiply;
+    position: absolute;
+    -webkit-app-region: no-drag;
+    outline-style: solid;
+    outline-color: transparent;
+    outline-offset: -2px;
+    outline-width: 2px;
+}
+
+.colorRadioWrapper input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-app-region: no-drag;
+}
+
+.colorRadioWrapper input:checked + .colorRadio {
+    outline-color: black;
+}
+
+#ColorBackdrop {
+    border: none;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    left: 50px;
+    top: 325px;
+    background-size: 100%;
+    background-image: url(../resources/textboxFullWidth.png);
+    width: 800px;
+    height: 70px;
+}
+
+#TitleText {
+  text-align: center;
+}

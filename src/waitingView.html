@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p id="TitleText">
+    <!-- Script is going to update title text -->
+    </p>
+    <button autofocus>
+    <button type="button" id="MinimizeButton"></button>
+    <button type="button" id="ExitButton"></button>
+    <div align="center">
+      <p style="padding-bottom: 0px; padding-top: 40px; width: 70%; color:white"> 
+        Please enter the following command in Minecraft: Education Edition:
+      </p>
+    </div>
+    <div align="center" style="width: 90%">
+      <input type="text" id="CommandLabel" value="" disabled/>
+      <button type="button" id="CopyButton"></button>
+    </div>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('./waitingView.js')
+    let applicationName = require('./base/sharedConstants.js').ApplicationName;
+    document.title = applicationName;
+    document.getElementById("TitleText").innerHTML = applicationName;
+  </script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p id="TitleText">
+      Error!
+    </p>
+    <button type="button" id="ExitButton"></button>
+    <div align="center">
+      <p style="padding-top: 150px; padding-left: 20px; color:white; padding-right: 20px" id="ErrorLabel">
+      </p>
+      <script>
+        require('./errorView.js')
+        document.title = require('./sharedConstants.js').ApplicationName;
+      </script>
+    </div>
+  </body>
+</html>
