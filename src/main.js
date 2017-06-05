@@ -271,7 +271,7 @@ electron_1.ipcMain.on('sameWindowEditorLoaded', (event, params) => {
 });
 
 electron_1.app.on('ready', (event, params) => {
-    const { Menu, MenuItem } = require('electron');
+    const { Menu } = electron_1;
     const template = [
         {
             label: 'Application',
