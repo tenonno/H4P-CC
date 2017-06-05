@@ -269,4 +269,30 @@ electron_1.ipcMain.on('exitSameWindowEditor', (event, params) => {
 electron_1.ipcMain.on('sameWindowEditorLoaded', (event, params) => {
     setEditorWindow(params.splitView);
 });
+
+electron_1.app.on('ready', (event, params) => {
+    const { Menu } = electron_1;
+    const template = [
+        {
+            label: 'Application',
+            submenu: [
+                { label: 'About Code Connection for Minecraft', role: 'about' },
+                { type: 'separator' },
+                { label: 'Quit', accelerator: 'Command+Q', role: 'quit' }
+            ]
+        }, {
+            label: 'Edit',
+            submenu: [
+                { label: 'Undo', accelerator: 'CmdOrCtrl+Z', role: 'undo' },
+                { label: 'Redo', accelerator: 'Shift+CmdOrCtrl+Z', role: 'redo' },
+                { type: 'separator' },
+                { label: 'Cut', accelerator: 'CmdOrCtrl+X', role: 'cut' },
+                { label: 'Copy', accelerator: 'CmdOrCtrl+C', role: 'copy' },
+                { label: 'Paste', accelerator: 'CmdOrCtrl+V', role: 'paste' },
+                { label: 'Select All', accelerator: 'CmdOrCtrl+A', role: 'selectAll' }
+            ]
+        }
+    ];
+    Menu.setApplicationMenu(Menu.buildFromTemplate(template));
+});
 //# sourceMappingURL=main.js.map
